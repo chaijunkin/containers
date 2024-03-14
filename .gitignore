@@ -1,0 +1,17 @@
+### macOS ###
+*.DS_Store
+
+
+### age ###
+age.agekey
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+
+### Python ###
+venv

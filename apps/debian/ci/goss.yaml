@@ -1,0 +1,13 @@
+---
+# https://github.com/onedr0p/containers/blob/main/apps/alpine/ci/goss.yaml
+
+group:
+  kubeguy:
+    exists: true
+    gid: 769
+
+user:
+  kubeguy:
+    exists: true
+    uid: 769
+    gid: 769
