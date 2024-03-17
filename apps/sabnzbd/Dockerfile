@@ -1,4 +1,4 @@
-FROM ghcr.io/onedr0p/alpine:rolling@sha256:3fbc581cb0fe29830376161ae026e2a765dcc11e1747477fe9ebf155720b8638
+FROM ghcr.io/chaijunkin/alpine:rolling@sha256:3fbc581cb0fe29830376161ae026e2a765dcc11e1747477fe9ebf155720b8638
 ARG TARGETPLATFORM
 ARG VERSION
 ARG CHANNEL
@@ -51,7 +51,7 @@ RUN \
         /tmp/*
 
 # Install par2cmdline-turbo
-COPY --from=ghcr.io/onedr0p/par2cmdline-turbo:1.1.1 /usr/local/bin/par2 /usr/local/bin/par2
+COPY --from=ghcr.io/chaijunkin/par2cmdline-turbo:1.1.1 /usr/local/bin/par2 /usr/local/bin/par2
 RUN ln -s /usr/local/bin/par2 /usr/local/bin/par2create \
     && ln -s /usr/local/bin/par2 /usr/local/bin/par2repair \
     && ln -s /usr/local/bin/par2 /usr/local/bin/par2verify
