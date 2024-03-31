@@ -1,5 +1,5 @@
 ---
-app: alpine
+app: alpine  # alpine
 base: true
 channels:
   - name: "3.19"
