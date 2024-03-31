@@ -69,6 +69,7 @@ Container | Channel | Image
 --- | --- | ---
 [actions-runner](https://github.com/chaijunkin/containers/pkgs/container/actions-runner) | stable | ghcr.io/chaijunkin/actions-runner
 [home-assistant](https://github.com/chaijunkin/containers/pkgs/container/home-assistant) | stable | ghcr.io/chaijunkin/home-assistant
+[postgres-init](https://github.com/chaijunkin/containers/pkgs/container/postgres-init) | stable | ghcr.io/chaijunkin/postgres-init
 [theme-park](https://github.com/chaijunkin/containers/pkgs/container/theme-park) | stable | ghcr.io/chaijunkin/theme-park
 [volsync](https://github.com/chaijunkin/containers/pkgs/container/volsync) | stable | ghcr.io/chaijunkin/volsync
 
