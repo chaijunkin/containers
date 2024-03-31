@@ -11,7 +11,7 @@ ENV NVIDIA_DRIVER_CAPABILITIES="compute,video,utility" \
     PLEX_MEDIA_SERVER_MAX_PLUGIN_PROCS="6" \
     PLEX_MEDIA_SERVER_USER="sauser" \
     PLEX_MEDIA_SERVER_INFO_VENDOR="Docker" \
-    PLEX_MEDIA_SERVER_INFO_DEVICE="Docker Container (onedr0p)"
+    PLEX_MEDIA_SERVER_INFO_DEVICE="Docker Container (chaijunkin)"
 
 # hadolint ignore=DL3008,DL3015,SC2039,SC2086
 RUN \

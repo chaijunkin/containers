@@ -51,7 +51,7 @@ RUN \
         /tmp/*
 
 # Install par2cmdline-turbo
-COPY --from=ghcr.io/onedr0p/par2cmdline-turbo:1.1.1 /usr/local/bin/par2 /usr/local/bin/par2
+COPY --from=ghcr.io/chaijunkin/par2cmdline-turbo:1.1.1 /usr/local/bin/par2 /usr/local/bin/par2
 RUN ln -s /usr/local/bin/par2 /usr/local/bin/par2create \
     && ln -s /usr/local/bin/par2 /usr/local/bin/par2repair \
     && ln -s /usr/local/bin/par2 /usr/local/bin/par2verify
