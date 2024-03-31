@@ -1,5 +1,5 @@
 ---
-app: postgres-init
+app: postgres-init  # postgres-init
 base: false
 semantic_versioning: true
 channels:
