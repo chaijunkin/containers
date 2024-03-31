@@ -20,5 +20,5 @@ group:
 user:
   sauser:
     exists: true
-    uid: 1002
+    uid: 1004
     gid: 1004

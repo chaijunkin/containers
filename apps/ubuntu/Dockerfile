@@ -38,7 +38,7 @@ USER root
 
 RUN \
     adduser sauser \
-        --uid 1002 \
+        --uid 1004 \
         --group \
         --system \
         --disabled-password \

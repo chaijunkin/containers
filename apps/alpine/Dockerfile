@@ -43,7 +43,7 @@ RUN \
 #hadolint ignore=DL3018
 RUN \
     addgroup -S sauser --gid 1004 \
-        && adduser -S sauser -G sauser --uid 1002 \
+        && adduser -S sauser -G sauser --uid 1004 \
     && \
     mkdir -p /config \
     && chown -R sauser:sauser /config \
