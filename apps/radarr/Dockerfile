@@ -32,7 +32,7 @@ RUN \
     && chmod -R 755 /app \
     && rm -rf /tmp/*
 
-USER kah
+USER sauser
 
 COPY ./apps/radarr/config.xml.tmpl /app/config.xml.tmpl
 COPY ./apps/radarr/entrypoint.sh /entrypoint.sh

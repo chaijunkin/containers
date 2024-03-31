@@ -42,7 +42,7 @@ RUN \
         /root/.cargo \
         /tmp/*
 
-USER kah
+USER sauser
 COPY ./apps/tautulli/entrypoint.sh /entrypoint.sh
 CMD ["/entrypoint.sh"]
 

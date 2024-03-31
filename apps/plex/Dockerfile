@@ -9,7 +9,7 @@ ENV NVIDIA_DRIVER_CAPABILITIES="compute,video,utility" \
     PLEX_MEDIA_SERVER_APPLICATION_SUPPORT_DIR="/config/Library/Application Support" \
     PLEX_MEDIA_SERVER_HOME="/usr/lib/plexmediaserver" \
     PLEX_MEDIA_SERVER_MAX_PLUGIN_PROCS="6" \
-    PLEX_MEDIA_SERVER_USER="kah" \
+    PLEX_MEDIA_SERVER_USER="sauser" \
     PLEX_MEDIA_SERVER_INFO_VENDOR="Docker" \
     PLEX_MEDIA_SERVER_INFO_DEVICE="Docker Container (onedr0p)"
 
@@ -50,6 +50,6 @@ RUN \
     && printf "umask %d\n" "${UMASK}" >> /etc/bash.bashrc
 
 WORKDIR "${PLEX_MEDIA_SERVER_HOME}"
-USER kah
+USER sauser
 COPY ./apps/plex/entrypoint.sh /entrypoint.sh
 CMD ["/entrypoint.sh"]

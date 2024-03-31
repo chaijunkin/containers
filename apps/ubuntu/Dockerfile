@@ -37,15 +37,15 @@ ENV \
 USER root
 
 RUN \
-    adduser kah \
-        --uid 568 \
+    adduser sauser \
+        --uid 1002 \
         --group \
         --system \
         --disabled-password \
         --no-create-home \
     && \
     mkdir -p /config \
-    && chown -R kah:kah /config \
+    && chown -R sauser:sauser /config \
     && chmod -R 775 /config
 
 WORKDIR /app
@@ -84,7 +84,7 @@ RUN \
     && ln -s /usr/bin/vim.tiny /usr/local/bin/nano \
     && ln -s /usr/bin/vim.tiny /usr/local/bin/emacs \
     && ln -s /usr/bin/catatonit /usr/bin/tini \
-    && chown -R kah:kah /app \
+    && chown -R sauser:sauser /app \
     && \
     printf "/bin/bash /scripts/greeting.sh\n" >> /etc/bash.bashrc \
     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \

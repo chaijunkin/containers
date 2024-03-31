@@ -32,7 +32,7 @@ RUN \
     && chmod -R 755 /app \
     && rm -rf /tmp/*
 
-USER kah
+USER sauser
 
 COPY ./apps/sonarr/config.xml.tmpl /app/config.xml.tmpl
 COPY ./apps/sonarr/entrypoint.sh /entrypoint.sh

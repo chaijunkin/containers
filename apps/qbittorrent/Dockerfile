@@ -33,7 +33,7 @@ RUN \
     && chmod -R 755 /app/qbittorrent-nox \
     && rm -rf /tmp/*
 
-USER kah
+USER sauser
 
 COPY ./apps/qbittorrent/config.py /scripts/config.py
 COPY ./apps/qbittorrent/entrypoint.sh /entrypoint.sh

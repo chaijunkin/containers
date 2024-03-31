@@ -46,7 +46,7 @@ RUN apk add --no-cache \
         /root/.cargo \
         /tmp/*
 
-USER kah
+USER sauser
 COPY ./apps/jbops/entrypoint.sh /entrypoint.sh
 CMD ["/entrypoint.sh"]
 
