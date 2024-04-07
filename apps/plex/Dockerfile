@@ -1,4 +1,4 @@
-FROM ghcr.io/chaijunkin/ubuntu:jammy-20240227@sha256:5e6181b9d8eea6600ede260899cdf07b9caa98467968a3bc7e4d8e5665e0d3a5
+FROM ghcr.io/chaijunkin/ubuntu:jammy-20240227@sha256:2995aef13e8fa2d9254bb935e9de7e79cd149e9f36e1d77fb04a2f9b39b1d4a3
 
 ARG TARGETPLATFORM
 ARG VERSION
