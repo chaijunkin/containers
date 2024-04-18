@@ -72,8 +72,6 @@ Container | Channel | Image
 [home-assistant](https://github.com/chaijunkin/containers/pkgs/container/home-assistant) | stable | ghcr.io/chaijunkin/home-assistant
 [jbops](https://github.com/chaijunkin/containers/pkgs/container/jbops) | stable | ghcr.io/chaijunkin/jbops
 [lidarr](https://github.com/chaijunkin/containers/pkgs/container/lidarr) | master | ghcr.io/chaijunkin/lidarr
-[lidarr-develop](https://github.com/chaijunkin/containers/pkgs/container/lidarr-develop) | develop | ghcr.io/chaijunkin/lidarr-develop
-[lidarr-nightly](https://github.com/chaijunkin/containers/pkgs/container/lidarr-nightly) | nightly | ghcr.io/chaijunkin/lidarr-nightly
 [plex](https://github.com/chaijunkin/containers/pkgs/container/plex) | stable | ghcr.io/chaijunkin/plex
 [plex-beta](https://github.com/chaijunkin/containers/pkgs/container/plex-beta) | beta | ghcr.io/chaijunkin/plex-beta
 [postgres-init](https://github.com/chaijunkin/containers/pkgs/container/postgres-init) | stable | ghcr.io/chaijunkin/postgres-init
