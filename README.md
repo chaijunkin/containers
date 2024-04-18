@@ -73,7 +73,6 @@ Container | Channel | Image
 [jbops](https://github.com/chaijunkin/containers/pkgs/container/jbops) | stable | ghcr.io/chaijunkin/jbops
 [lidarr](https://github.com/chaijunkin/containers/pkgs/container/lidarr) | master | ghcr.io/chaijunkin/lidarr
 [plex](https://github.com/chaijunkin/containers/pkgs/container/plex) | stable | ghcr.io/chaijunkin/plex
-[plex-beta](https://github.com/chaijunkin/containers/pkgs/container/plex-beta) | beta | ghcr.io/chaijunkin/plex-beta
 [postgres-init](https://github.com/chaijunkin/containers/pkgs/container/postgres-init) | stable | ghcr.io/chaijunkin/postgres-init
 [prowlarr](https://github.com/chaijunkin/containers/pkgs/container/prowlarr) | master | ghcr.io/chaijunkin/prowlarr
 [prowlarr-develop](https://github.com/chaijunkin/containers/pkgs/container/prowlarr-develop) | develop | ghcr.io/chaijunkin/prowlarr-develop
@@ -88,7 +87,6 @@ Container | Channel | Image
 [sonarr](https://github.com/chaijunkin/containers/pkgs/container/sonarr) | main | ghcr.io/chaijunkin/sonarr
 [sonarr-develop](https://github.com/chaijunkin/containers/pkgs/container/sonarr-develop) | develop | ghcr.io/chaijunkin/sonarr-develop
 [tautulli](https://github.com/chaijunkin/containers/pkgs/container/tautulli) | master | ghcr.io/chaijunkin/tautulli
-[theme-park](https://github.com/chaijunkin/containers/pkgs/container/theme-park) | stable | ghcr.io/chaijunkin/theme-park
 [volsync](https://github.com/chaijunkin/containers/pkgs/container/volsync) | stable | ghcr.io/chaijunkin/volsync
 
 
