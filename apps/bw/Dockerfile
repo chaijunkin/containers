@@ -19,4 +19,6 @@ COPY --from=bw-cli /out /usr/sbin/
 
 USER kubeguy
 COPY ./apps/bw/entrypoint.sh /entrypoint.sh
+COPY ./apps/bw/healthcheck.sh /healthcheck.sh
+
 CMD ["/entrypoint.sh"]
