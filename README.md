@@ -75,17 +75,12 @@ Container | Channel | Image
 [plex](https://github.com/chaijunkin/containers/pkgs/container/plex) | stable | ghcr.io/chaijunkin/plex
 [postgres-init](https://github.com/chaijunkin/containers/pkgs/container/postgres-init) | stable | ghcr.io/chaijunkin/postgres-init
 [prowlarr](https://github.com/chaijunkin/containers/pkgs/container/prowlarr) | master | ghcr.io/chaijunkin/prowlarr
-[prowlarr-develop](https://github.com/chaijunkin/containers/pkgs/container/prowlarr-develop) | develop | ghcr.io/chaijunkin/prowlarr-develop
-[prowlarr-nightly](https://github.com/chaijunkin/containers/pkgs/container/prowlarr-nightly) | nightly | ghcr.io/chaijunkin/prowlarr-nightly
 [qbittorrent](https://github.com/chaijunkin/containers/pkgs/container/qbittorrent) | stable | ghcr.io/chaijunkin/qbittorrent
 [qbittorrent-beta](https://github.com/chaijunkin/containers/pkgs/container/qbittorrent-beta) | beta | ghcr.io/chaijunkin/qbittorrent-beta
 [radarr](https://github.com/chaijunkin/containers/pkgs/container/radarr) | master | ghcr.io/chaijunkin/radarr
-[radarr-develop](https://github.com/chaijunkin/containers/pkgs/container/radarr-develop) | develop | ghcr.io/chaijunkin/radarr-develop
-[radarr-nightly](https://github.com/chaijunkin/containers/pkgs/container/radarr-nightly) | nightly | ghcr.io/chaijunkin/radarr-nightly
 [readarr-develop](https://github.com/chaijunkin/containers/pkgs/container/readarr-develop) | develop | ghcr.io/chaijunkin/readarr-develop
 [readarr-nightly](https://github.com/chaijunkin/containers/pkgs/container/readarr-nightly) | nightly | ghcr.io/chaijunkin/readarr-nightly
 [sonarr](https://github.com/chaijunkin/containers/pkgs/container/sonarr) | main | ghcr.io/chaijunkin/sonarr
-[sonarr-develop](https://github.com/chaijunkin/containers/pkgs/container/sonarr-develop) | develop | ghcr.io/chaijunkin/sonarr-develop
 [tautulli](https://github.com/chaijunkin/containers/pkgs/container/tautulli) | master | ghcr.io/chaijunkin/tautulli
 [volsync](https://github.com/chaijunkin/containers/pkgs/container/volsync) | stable | ghcr.io/chaijunkin/volsync
 
