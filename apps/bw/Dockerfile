@@ -1,4 +1,4 @@
-FROM alpine:3.19 as bw-cli
+FROM alpine:3.20 as bw-cli
 ARG VERSION
 RUN \
   apk add --no-cache \
@@ -11,7 +11,7 @@ RUN \
   # BW_RELEASE=${BW_RELEASE#cli-v} && \
   curl -o \
     /tmp/bw.zip -L \
-      "https://github.com/bitwarden/clients/releases/download/cli-v${VERSION}/bw-linux-${VERSION}.zip" && \
+      "https://github.com/bitwarden/clients/releases/download/cli-v${VERSION}/bw-oss-linux-${VERSION}.zip" && \
   unzip -q /tmp/bw.zip -d /out
 
 FROM ghcr.io/roxedus/debian:rolling
