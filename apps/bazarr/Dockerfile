@@ -1,4 +1,4 @@
-FROM ghcr.io/chaijunkin/alpine:rolling@sha256:358e4ce4453fe54bb1dc3be8ec37fbd7b1be96c74fe37fa3c6e7224a816987be
+FROM ghcr.io/chaijunkin/alpine:rolling@sha256:d00fa1676653cbf4a9cad55be6695a7db6416f8e81a6ceafe979aa15427fb0ea
 
 ARG TARGETPLATFORM
 ARG VERSION
