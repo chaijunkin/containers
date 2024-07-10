@@ -76,7 +76,6 @@ Container | Channel | Image
 [postgres-init](https://github.com/chaijunkin/containers/pkgs/container/postgres-init) | stable | ghcr.io/chaijunkin/postgres-init
 [prowlarr](https://github.com/chaijunkin/containers/pkgs/container/prowlarr) | master | ghcr.io/chaijunkin/prowlarr
 [qbittorrent](https://github.com/chaijunkin/containers/pkgs/container/qbittorrent) | stable | ghcr.io/chaijunkin/qbittorrent
-[qbittorrent-beta](https://github.com/chaijunkin/containers/pkgs/container/qbittorrent-beta) | beta | ghcr.io/chaijunkin/qbittorrent-beta
 [radarr](https://github.com/chaijunkin/containers/pkgs/container/radarr) | master | ghcr.io/chaijunkin/radarr
 [sonarr](https://github.com/chaijunkin/containers/pkgs/container/sonarr) | main | ghcr.io/chaijunkin/sonarr
 [tautulli](https://github.com/chaijunkin/containers/pkgs/container/tautulli) | master | ghcr.io/chaijunkin/tautulli
