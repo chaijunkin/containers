@@ -4,6 +4,7 @@ set -e
 
 export BW_PORT=${BW_PORT:=8087}
 export BITWARDENCLI_APPDATA_DIR=$(mktemp -d)
+export HOME=$(mktemp -d)
 
 bw config server "${BW_HOST}"
 
