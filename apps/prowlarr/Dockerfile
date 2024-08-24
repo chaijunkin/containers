@@ -1,19 +1,34 @@
-FROM ghcr.io/chaijunkin/alpine:rolling@sha256:358e4ce4453fe54bb1dc3be8ec37fbd7b1be96c74fe37fa3c6e7224a816987be
+ARG VERSION
+FROM docker.io/library/alpine:3.20
 
 ARG TARGETPLATFORM
 ARG VERSION
 ARG CHANNEL
 
 ENV \
-    PROWLARR__INSTANCE_NAME="Prowlarr" \
-    PROWLARR__BRANCH="${CHANNEL}" \
-    PROWLARR__PORT="9696" \
-    PROWLARR__ANALYTICS_ENABLED="False"
+    COMPlus_EnableDiagnostics="0" \
+    PROWLARR__UPDATE__BRANCH="${CHANNEL}"
 
-#hadolint ignore=DL3018
-RUN apk add --no-cache ca-certificates icu-libs libintl sqlite-libs xmlstarlet
-#hadolint ignore=DL3059
+ENV UMASK="0002" \
+    TZ="Etc/UTC"
+
+USER root
+WORKDIR /app
+
+#hadolint ignore=DL3018,DL3059
 RUN \
+    apk add --no-cache \
+        bash \
+        ca-certificates \
+        catatonit \
+        curl \
+        icu-libs \
+        jq \
+        libintl \
+        nano \
+        sqlite-libs \
+        tzdata \
+    && \
     case "${TARGETPLATFORM}" in \
         'linux/amd64') export ARCH='x64' ;; \
         'linux/arm64') export ARCH='arm64' ;; \
@@ -21,20 +36,23 @@ RUN \
     && \
     mkdir -p /app/bin \
     && \
-    curl -fsSL "https://prowlarr.servarr.com/v1/update/${PROWLARR__BRANCH}/updatefile?version=${VERSION}&os=linuxmusl&runtime=netcore&arch=${ARCH}" \
+    curl -fsSL "https://prowlarr.servarr.com/v1/update/${PROWLARR__UPDATE__BRANCH}/updatefile?version=${VERSION}&os=linuxmusl&runtime=netcore&arch=${ARCH}" \
         | tar xzf - -C /app/bin --strip-components=1 \
     && \
-    rm -rf \
-        /app/bin/Prowlarr.Update \
+    rm -rf /app/bin/Prowlarr.Update \
     && \
-    printf "UpdateMethod=docker\nBranch=%s\nPackageVersion=%s\nPackageAuthor=[chaijunkin](https://github.com/chaijunkin)\n" "${PROWLARR__BRANCH}" "${VERSION}" > /app/package_info \
+    printf "UpdateMethod=docker\nBranch=%s\nPackageVersion=%s\nPackageAuthor=[onedr0p](https://github.com/onedr0p)\n" "${PROWLARR__UPDATE__BRANCH}" "${VERSION}" > /app/package_info \
     && chown -R root:root /app \
     && chmod -R 755 /app \
     && rm -rf /tmp/*
 
-USER sauser
-COPY ./apps/prowlarr/config.xml.tmpl /app/config.xml.tmpl
 COPY ./apps/prowlarr/entrypoint.sh /entrypoint.sh
+
+USER nobody:nogroup
+WORKDIR /config
+VOLUME ["/config"]
+
+ENTRYPOINT ["/usr/bin/catatonit", "--"]
 CMD ["/entrypoint.sh"]
 
 LABEL org.opencontainers.image.source="https://github.com/Prowlarr/Prowlarr"
