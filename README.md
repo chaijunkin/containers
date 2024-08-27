@@ -120,8 +120,6 @@ Container | Channel | Image
 [plex-beta](https://github.com/chaijunkin/containers/pkgs/container/plex-beta) | beta | ghcr.io/chaijunkin/plex-beta
 [postgres-init](https://github.com/chaijunkin/containers/pkgs/container/postgres-init) | stable | ghcr.io/chaijunkin/postgres-init
 [prowlarr](https://github.com/chaijunkin/containers/pkgs/container/prowlarr) | master | ghcr.io/chaijunkin/prowlarr
-[prowlarr-develop](https://github.com/chaijunkin/containers/pkgs/container/prowlarr-develop) | develop | ghcr.io/chaijunkin/prowlarr-develop
-[prowlarr-nightly](https://github.com/chaijunkin/containers/pkgs/container/prowlarr-nightly) | nightly | ghcr.io/chaijunkin/prowlarr-nightly
 [qbittorrent](https://github.com/chaijunkin/containers/pkgs/container/qbittorrent) | stable | ghcr.io/chaijunkin/qbittorrent
 [radarr](https://github.com/chaijunkin/containers/pkgs/container/radarr) | master | ghcr.io/chaijunkin/radarr
 [radarr-develop](https://github.com/chaijunkin/containers/pkgs/container/radarr-develop) | develop | ghcr.io/chaijunkin/radarr-develop
