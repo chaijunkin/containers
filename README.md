@@ -124,8 +124,6 @@ Container | Channel | Image
 [radarr](https://github.com/chaijunkin/containers/pkgs/container/radarr) | master | ghcr.io/chaijunkin/radarr
 [radarr-develop](https://github.com/chaijunkin/containers/pkgs/container/radarr-develop) | develop | ghcr.io/chaijunkin/radarr-develop
 [radarr-nightly](https://github.com/chaijunkin/containers/pkgs/container/radarr-nightly) | nightly | ghcr.io/chaijunkin/radarr-nightly
-[readarr-develop](https://github.com/chaijunkin/containers/pkgs/container/readarr-develop) | develop | ghcr.io/chaijunkin/readarr-develop
-[readarr-nightly](https://github.com/chaijunkin/containers/pkgs/container/readarr-nightly) | nightly | ghcr.io/chaijunkin/readarr-nightly
 [sabnzbd](https://github.com/chaijunkin/containers/pkgs/container/sabnzbd) | stable | ghcr.io/chaijunkin/sabnzbd
 [sonarr](https://github.com/chaijunkin/containers/pkgs/container/sonarr) | main | ghcr.io/chaijunkin/sonarr
 [sonarr-develop](https://github.com/chaijunkin/containers/pkgs/container/sonarr-develop) | develop | ghcr.io/chaijunkin/sonarr-develop
