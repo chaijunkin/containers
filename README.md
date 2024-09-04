@@ -126,7 +126,6 @@ Container | Channel | Image
 [radarr-nightly](https://github.com/chaijunkin/containers/pkgs/container/radarr-nightly) | nightly | ghcr.io/chaijunkin/radarr-nightly
 [sabnzbd](https://github.com/chaijunkin/containers/pkgs/container/sabnzbd) | stable | ghcr.io/chaijunkin/sabnzbd
 [sonarr](https://github.com/chaijunkin/containers/pkgs/container/sonarr) | main | ghcr.io/chaijunkin/sonarr
-[sonarr-develop](https://github.com/chaijunkin/containers/pkgs/container/sonarr-develop) | develop | ghcr.io/chaijunkin/sonarr-develop
 [theme-park](https://github.com/chaijunkin/containers/pkgs/container/theme-park) | stable | ghcr.io/chaijunkin/theme-park
 [volsync](https://github.com/chaijunkin/containers/pkgs/container/volsync) | stable | ghcr.io/chaijunkin/volsync
 
