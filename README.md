@@ -5,6 +5,7 @@ Each Image will be built with a `rolling` tag, along with tags specific to it's 
 Container | Channel | Image
 --- | --- | ---
 [bw](https://github.com/Roxedus/containerrs/pkgs/container/bw) | stable | ghcr.io/Roxedus/bw
+[rallly](https://github.com/Roxedus/containerrs/pkgs/container/rallly) | stable | ghcr.io/Roxedus/rallly
 
 
 ## Credits
