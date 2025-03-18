@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 import importlib.util
 import sys
 import os
@@ -13,7 +14,7 @@ from os.path import isfile
 
 repo_owner = os.environ.get('REPO_OWNER', os.environ.get('GITHUB_REPOSITORY_OWNER'))
 
-TESTABLE_PLATFORMS = ["linux/amd64"]
+TESTABLE_PLATFORMS = ["linux/amd64", "linux/arm64"]
 
 def load_metadata_file_yaml(file_path):
     with open(file_path, "r") as f:
@@ -125,11 +126,7 @@ def get_image_metadata(subdir, meta, forRelease=False, force=False, channels=Non
             platformToBuild["target_arch"] = target_arch
             platformToBuild["version"] = version
             platformToBuild["channel"] = channel["name"]
-
-            if meta.get("base", False):
-                platformToBuild["label_type"] ="org.opencontainers.image.base"
-            else:
-                platformToBuild["label_type"]="org.opencontainers.image"
+            platformToBuild["label_type"]="org.opencontainers.image"
 
             if isfile(os.path.join(subdir, channel["name"], "Dockerfile")):
                 platformToBuild["dockerfile"] = os.path.join(subdir, channel["name"], "Dockerfile")

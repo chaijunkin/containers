@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 
 import os
 import json
@@ -24,4 +25,3 @@ if __name__ == "__main__":
             if f != "metadata.json":
                 continue
             json_to_yaml(subdir, f)
-
