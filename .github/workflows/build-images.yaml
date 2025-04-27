@@ -8,7 +8,7 @@ on:
       appsToBuild:
         required: false
         type: string
-        default: ""
+        default: "all"
       channelsToBuild:
         required: false
         type: string
@@ -83,7 +83,7 @@ jobs:
               fi
           fi
           echo "matrices=${matrices}" >> $GITHUB_OUTPUT
-          echo "${matrices}"
+          echo "${matrices}" | jq '.'
 
   build-platform-images:
     name: Build/Test ${{ matrix.image.name }} (${{ matrix.image.platform }})
@@ -108,7 +108,7 @@ jobs:
         run: |
           cat << EOF
           ${{ toJSON(matrix.image)}}
-          EOF
+          EOF | jq '.'
 
       - name: Validate Matrix Input
         shell: bash
