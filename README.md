@@ -6,7 +6,6 @@ Container | Channel | Image
 --- | --- | ---
 [bw](https://github.com/Roxedus/containers/pkgs/container/bw) | stable | ghcr.io/Roxedus/bw
 [debian](https://github.com/Roxedus/containers/pkgs/container/debian) | bookworm-slim | ghcr.io/Roxedus/debian
-[rallly](https://github.com/Roxedus/containers/pkgs/container/rallly) | stable | ghcr.io/Roxedus/rallly
 
 
 ## Credits
