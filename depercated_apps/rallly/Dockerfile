@@ -1,4 +1,4 @@
-FROM ghcr.io/roxedus/debian:rolling AS base
+FROM ghcr.io/chaijunkin/debian:rolling AS base
 
 ARG VERSION
 

@@ -4,8 +4,8 @@ Each Image will be built with a `rolling` tag, along with tags specific to it's 
 
 Container | Channel | Image
 --- | --- | ---
-[bw](https://github.com/Roxedus/containers/pkgs/container/bw) | stable | ghcr.io/Roxedus/bw
-[debian](https://github.com/Roxedus/containers/pkgs/container/debian) | bookworm-slim | ghcr.io/Roxedus/debian
+[bw](https://github.com/chaijunkin/containers/pkgs/container/bw) | stable | ghcr.io/chaijunkin/bw
+[debian](https://github.com/chaijunkin/containers/pkgs/container/debian) | bookworm-slim | ghcr.io/chaijunkin/debian
 
 
 ## Credits

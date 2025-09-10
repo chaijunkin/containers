@@ -14,7 +14,7 @@ RUN \
       "https://github.com/bitwarden/clients/releases/download/cli-v${VERSION}/bw-oss-linux-${VERSION}.zip" && \
   unzip -q /tmp/bw.zip -d /out
 
-FROM ghcr.io/roxedus/debian:rolling
+FROM ghcr.io/chaijunkin/debian:rolling
 COPY --from=bw-cli /out /usr/sbin/
 
 USER kubeguy
