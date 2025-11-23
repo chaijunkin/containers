@@ -6,7 +6,7 @@ Container | Channel | Image
 --- | --- | ---
 [bw](https://github.com/chaijunkin/containers/pkgs/container/bw) | stable | ghcr.io/chaijunkin/bw
 [debian](https://github.com/chaijunkin/containers/pkgs/container/debian) | bookworm-slim | ghcr.io/chaijunkin/debian
-
+[linux-utility](https://github.com/chaijunkin/containers/pkgs/container/linux-utility) | stable | ghcr.io/chaijunkin/linux-utility
 
 ## Credits
 
