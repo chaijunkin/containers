@@ -134,6 +134,55 @@ RUN curl -LO https://github.com/vmware-tanzu/velero/releases/download/v${VELERO_
     mv velero-v${VELERO_VERSION}-linux-amd64/velero /usr/local/bin/ && \
     rm -rf velero-v${VELERO_VERSION}-linux-amd64 velero-v${VELERO_VERSION}-linux-amd64.tar.gz
 
+# Install SOPS (secret management)
+ARG SOPS_VERSION=3.8.1
+RUN curl -LO https://github.com/getsops/sops/releases/download/v${SOPS_VERSION}/sops-v${SOPS_VERSION}.linux.amd64 && \
+    chmod +x sops-v${SOPS_VERSION}.linux.amd64 && \
+    mv sops-v${SOPS_VERSION}.linux.amd64 /usr/local/bin/sops
+
+# Install age (encryption tool for SOPS)
+ARG AGE_VERSION=1.1.1
+RUN curl -LO https://github.com/FiloSottile/age/releases/download/v${AGE_VERSION}/age-v${AGE_VERSION}-linux-amd64.tar.gz && \
+    tar -xzf age-v${AGE_VERSION}-linux-amd64.tar.gz && \
+    mv age/age /usr/local/bin/ && \
+    mv age/age-keygen /usr/local/bin/ && \
+    rm -rf age age-v${AGE_VERSION}-linux-amd64.tar.gz
+
+# Install task (taskfile/go-task)
+ARG TASK_VERSION=3.35.1
+RUN curl -LO https://github.com/go-task/task/releases/download/v${TASK_VERSION}/task_linux_amd64.tar.gz && \
+    tar -xzf task_linux_amd64.tar.gz && \
+    mv task /usr/local/bin/ && \
+    rm task_linux_amd64.tar.gz
+
+# Install kubeconform (Kubernetes manifest validation)
+ARG KUBECONFORM_VERSION=0.6.4
+RUN curl -LO https://github.com/yannh/kubeconform/releases/download/v${KUBECONFORM_VERSION}/kubeconform-linux-amd64.tar.gz && \
+    tar -xzf kubeconform-linux-amd64.tar.gz && \
+    mv kubeconform /usr/local/bin/ && \
+    rm kubeconform-linux-amd64.tar.gz
+
+# Install cilium CLI
+ARG CILIUM_CLI_VERSION=0.16.4
+RUN curl -LO https://github.com/cilium/cilium-cli/releases/download/v${CILIUM_CLI_VERSION}/cilium-linux-amd64.tar.gz && \
+    tar -xzf cilium-linux-amd64.tar.gz && \
+    mv cilium /usr/local/bin/ && \
+    rm cilium-linux-amd64.tar.gz
+
+# Install hubble CLI (for Cilium)
+ARG HUBBLE_VERSION=0.13.2
+RUN curl -LO https://github.com/cilium/hubble/releases/download/v${HUBBLE_VERSION}/hubble-linux-amd64.tar.gz && \
+    tar -xzf hubble-linux-amd64.tar.gz && \
+    mv hubble /usr/local/bin/ && \
+    rm hubble-linux-amd64.tar.gz
+
+# Install talosctl (Talos Linux CLI)
+ARG TALOS_VERSION=1.6.7
+RUN curl -LO https://github.com/siderolabs/talos/releases/download/v${TALOS_VERSION}/talosctl-linux-amd64 && \
+    chmod +x talosctl-linux-amd64 && \
+    mv talosctl-linux-amd64 /usr/local/bin/talosctl
+
 # Set default shell to bash
 CMD ["/bin/bash"]
+
 
