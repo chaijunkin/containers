@@ -10,11 +10,11 @@ file:
   /usr/local/bin/grafana-cli:
     exists: true
 command:
-  kubectl version --client:
+  kubectl version --client=true:
     exit-status: 0
-  promtool --version:
+  promtool version:
     exit-status: 0
-  pint --version:
+  pint version:
     exit-status: 0
   jq --version:
     exit-status: 0
