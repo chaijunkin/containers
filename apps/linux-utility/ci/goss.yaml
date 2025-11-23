@@ -1,0 +1,20 @@
+---
+# https://github.com/aelsabbahy/goss/blob/master/docs/manual.md#file
+file:
+  /usr/local/bin/kubectl:
+    exists: true
+  /usr/local/bin/promtool:
+    exists: true
+  /usr/local/bin/pint:
+    exists: true
+  /usr/local/bin/grafana-cli:
+    exists: true
+command:
+  kubectl version --client:
+    exit-status: 0
+  promtool --version:
+    exit-status: 0
+  pint --version:
+    exit-status: 0
+  jq --version:
+    exit-status: 0

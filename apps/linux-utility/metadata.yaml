@@ -1,5 +1,5 @@
 ---
-app: bw
+app: linux-utility
 base: false
 semantic_versioning: false
 channels:
