@@ -85,7 +85,7 @@ RUN curl -LO https://github.com/fluxcd/flux2/releases/download/v${FLUX_VERSION}/
     rm flux_${FLUX_VERSION}_linux_amd64.tar.gz
 
 # Install Trivy (security scanner)
-ARG TRIVY_VERSION=0.50.0
+ARG TRIVY_VERSION=0.69.3
 RUN curl -LO https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-64bit.tar.gz && \
     tar -xzf trivy_${TRIVY_VERSION}_Linux-64bit.tar.gz && \
     mv trivy /usr/local/bin/ && \
