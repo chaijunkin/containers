@@ -1,0 +1,4 @@
+---
+command:
+  jq --version:
+    exit-status: 0
