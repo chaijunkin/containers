@@ -56,6 +56,10 @@ def get_latest_github_release(repo):
     url = f"https://api.github.com/repos/{repo}/releases/latest"
     try:
         req = Request(url)
+        # Use GITHUB_TOKEN if available in environment
+        token = os.environ.get('GITHUB_TOKEN')
+        if token:
+            req.add_header('Authorization', f'token {token}')
         # Adding a basic User-Agent to avoid issues with GitHub's API
         req.add_header('User-Agent', 'Update-Versions-Script')
         with urlopen(req) as response:
