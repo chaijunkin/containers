@@ -17,14 +17,14 @@ RUN curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/s
     mv kubectl /usr/local/bin/
 
 # Install promtool (downloading prometheus and extracting promtool)
-ARG PROMETHEUS_VERSION=2.51.0
+ARG PROMETHEUS_VERSION=3.11.3
 RUN curl -LO https://github.com/prometheus/prometheus/releases/download/v${PROMETHEUS_VERSION}/prometheus-${PROMETHEUS_VERSION}.linux-amd64.tar.gz && \
     tar -xzf prometheus-${PROMETHEUS_VERSION}.linux-amd64.tar.gz && \
     mv prometheus-${PROMETHEUS_VERSION}.linux-amd64/promtool /usr/local/bin/ && \
     rm -rf prometheus-${PROMETHEUS_VERSION}.linux-amd64 prometheus-${PROMETHEUS_VERSION}.linux-amd64.tar.gz
 
 # Install pint
-ARG PINT_VERSION=0.52.0
+ARG PINT_VERSION=0.82.2
 RUN curl -LO https://github.com/cloudflare/pint/releases/download/v${PINT_VERSION}/pint-${PINT_VERSION}-linux-amd64.tar.gz && \
     tar -xzf pint-${PINT_VERSION}-linux-amd64.tar.gz && \
     mv pint-linux-amd64 /usr/local/bin/pint && \
@@ -36,7 +36,7 @@ RUN curl -LO https://github.com/cloudflare/pint/releases/download/v${PINT_VERSIO
 # A better approach for a utility container might be to install the grafana package if available or just the binary.
 # Alpine has a grafana package, but it's the full server.
 # Let's try downloading the tarball and extracting bin/grafana-cli.
-ARG GRAFANA_VERSION=10.4.1
+ARG GRAFANA_VERSION=13.0.1
 RUN curl -LO https://dl.grafana.com/oss/release/grafana-${GRAFANA_VERSION}.linux-amd64.tar.gz && \
     tar -xzf grafana-${GRAFANA_VERSION}.linux-amd64.tar.gz && \
     mv grafana-v${GRAFANA_VERSION}/bin/grafana-cli /usr/local/bin/ && \
@@ -44,7 +44,7 @@ RUN curl -LO https://dl.grafana.com/oss/release/grafana-${GRAFANA_VERSION}.linux
     rm -rf grafana-v${GRAFANA_VERSION} grafana-${GRAFANA_VERSION}.linux-amd64.tar.gz
 
 # Install Helm
-ARG HELM_VERSION=3.14.3
+ARG HELM_VERSION=4.1.4
 RUN curl -LO https://get.helm.sh/helm-v${HELM_VERSION}-linux-amd64.tar.gz && \
     tar -xzf helm-v${HELM_VERSION}-linux-amd64.tar.gz && \
     mv linux-amd64/helm /usr/local/bin/ && \
@@ -163,7 +163,7 @@ RUN curl -LO https://github.com/yannh/kubeconform/releases/download/v${KUBECONFO
     rm kubeconform-linux-amd64.tar.gz
 
 # Install cilium CLI
-ARG CILIUM_CLI_VERSION=0.16.4
+ARG CILIUM_CLI_VERSION=0.19.2
 RUN curl -LO https://github.com/cilium/cilium-cli/releases/download/v${CILIUM_CLI_VERSION}/cilium-linux-amd64.tar.gz && \
     tar -xzf cilium-linux-amd64.tar.gz && \
     mv cilium /usr/local/bin/ && \
