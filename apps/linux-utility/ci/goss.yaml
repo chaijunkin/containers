@@ -7,8 +7,6 @@ file:
     exists: true
   /usr/local/bin/pint:
     exists: true
-  /usr/local/bin/grafana-cli:
-    exists: true
 command:
   jq --version:
     exit-status: 0
