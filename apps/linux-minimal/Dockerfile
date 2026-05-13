@@ -1,4 +1,4 @@
-FROM alpine:3.19
+FROM alpine:3.23
 
 # Install essential debugging and networking tools
 RUN apk add --no-cache \
