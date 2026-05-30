@@ -6,6 +6,7 @@ Container | Channel | Image
 --- | --- | ---
 [bw](https://github.com/chaijunkin/containers/pkgs/container/bw) | stable | ghcr.io/chaijunkin/bw
 [debian](https://github.com/chaijunkin/containers/pkgs/container/debian) | bookworm-slim | ghcr.io/chaijunkin/debian
+[forgejo-runner](https://github.com/chaijunkin/containers/pkgs/container/forgejo-runner) | stable | ghcr.io/chaijunkin/forgejo-runner
 [kubetshoot](https://github.com/chaijunkin/containers/pkgs/container/kubetshoot) | stable | ghcr.io/chaijunkin/kubetshoot
 [linux-minimal](https://github.com/chaijunkin/containers/pkgs/container/linux-minimal) | stable | ghcr.io/chaijunkin/linux-minimal
 [linux-utility](https://github.com/chaijunkin/containers/pkgs/container/linux-utility) | stable | ghcr.io/chaijunkin/linux-utility
