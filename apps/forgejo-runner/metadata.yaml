@@ -1,6 +1,6 @@
 ---
 app: forgejo-runner
-base: false
+base: true
 semantic_versioning: false
 channels:
   - name: stable
