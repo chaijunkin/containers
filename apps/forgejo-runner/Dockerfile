@@ -14,10 +14,11 @@ RUN \
     && apt-get -qq update \
     && apt-get -qq install python3.14 python3.14-venv rsync
 
-# Install AWS CLI
-RUN \
-    apt-get update && \
-    apt-get -qq install -y awscli
+# Download and install AWS CLI v2
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
+    unzip awscliv2.zip && \
+    ./aws/install && \
+    rm -rf awscliv2.zip ./aws
 
 # Install kustomize
 # renovate: datasource=github-releases depName=kubernetes-sigs/kustomize
