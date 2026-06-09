@@ -1,4 +1,4 @@
-FROM alpine:3.23 AS bw-cli
+FROM alpine:3.24 AS bw-cli
 ARG VERSION
 RUN \
   apk add --no-cache \
