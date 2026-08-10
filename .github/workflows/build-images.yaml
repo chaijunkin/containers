@@ -164,9 +164,10 @@ jobs:
 
       - name: Setup Goss
         if: ${{ matrix.image.tests_enabled }}
-        uses: mlipscombe/goss-installation-action@a440e50e0ca070a5b84fc4b99a4e2bc7f9390201 # v1.2.2
+        uses: e1himself/goss-installation-action@v1.0.4
         with:
-          version: latest
+          # renovate: datasource=github-releases depName=aelsabbahy/goss
+          version: v0.3.18
 
       - name: Prepare Build Outputs
         id: prepare-build-outputs
