@@ -5,7 +5,7 @@ FROM ghcr.io/catthehacker/ubuntu:act-24.04@sha256:5d6a17640b25694988b9db5a414553
 # Install packages from other images
 COPY --from=ghcr.io/fluxcd/flux-cli:v2.8.7 /usr/local/bin/flux /usr/local/bin/flux
 COPY --from=docker.io/alpine/helm:4.2.3 /usr/bin/helm /usr/local/bin/helm
-COPY --from=ghcr.io/sigstore/cosign/cosign:v3.0.6 /ko-app/cosign /usr/local/bin/cosign
+COPY --from=ghcr.io/sigstore/cosign/cosign:v3.1.2 /ko-app/cosign /usr/local/bin/cosign
 
 
 # Install recent Python
