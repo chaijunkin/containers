@@ -80,7 +80,7 @@ RUN (curl -fsSLO https://github.com/fullstorydev/grpcurl/releases/download/v${GR
 RUN (curl -fsSLO https://github.com/fortio/fortio/releases/download/v${FORTIO_VERSION}/fortio-linux_amd64-${FORTIO_VERSION}.tgz && tar -xzf fortio-linux_amd64-${FORTIO_VERSION}.tgz && mv usr/bin/fortio .) || touch fortio
 
 # --- Stage 2: Final ---
-FROM alpine:3.23
+FROM alpine:3.24
 
 # Install base packages and netshoot-style tools
 RUN set -ex \
