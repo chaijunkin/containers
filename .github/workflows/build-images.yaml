@@ -164,7 +164,8 @@ jobs:
 
       - name: Setup Goss
         if: ${{ matrix.image.tests_enabled }}
-        uses: e1himself/goss-installation-action@v1.0.4
+        # renovate: datasource=github-releases depName=e1himself/goss-installation-action
+        uses: e1himself/goss-installation-action@v1.3.0
         with:
           # renovate: datasource=github-releases depName=aelsabbahy/goss
           version: v0.3.18
