@@ -10,6 +10,7 @@ Container | Channel | Image
 [kubetshoot](https://github.com/chaijunkin/containers/pkgs/container/kubetshoot) | stable | ghcr.io/chaijunkin/kubetshoot
 [linux-minimal](https://github.com/chaijunkin/containers/pkgs/container/linux-minimal) | stable | ghcr.io/chaijunkin/linux-minimal
 [linux-utility](https://github.com/chaijunkin/containers/pkgs/container/linux-utility) | stable | ghcr.io/chaijunkin/linux-utility
+[opencode](https://github.com/chaijunkin/containers/pkgs/container/opencode) | stable | ghcr.io/chaijunkin/opencode
 
 
 ## Credits
