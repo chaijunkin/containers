@@ -41,4 +41,4 @@ USER opencode
 WORKDIR /home/opencode
 RUN opencode --version
 
-ENTRYPOINT ["opencode"]
+CMD ["opencode"]
