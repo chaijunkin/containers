@@ -1,0 +1,11 @@
+---
+command:
+  opencode-version:
+    exec: opencode --version
+    exit-status: 0
+  git-version:
+    exec: git --version
+    exit-status: 0
+  gh-version:
+    exec: gh --version
+    exit-status: 0
